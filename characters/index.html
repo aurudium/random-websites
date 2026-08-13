@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css"></link>
+</head>
+<body class="bg-dark">
+    <div class="col-12 d-flex justify-content-center min-vh-100 align-items-center">
+        <div class="card col-11 col-md-4 col-lg-3" style="Display: none" id="divRegister">
+            <div class="card-body">
+                <h1 class="col-12 text-center">Characters</h1>
+                <form>
+                    <label class="form-label" for="txtFirstName" aria-label="First Name">First Name</label>
+                    <input class="form-control" id="txtFirstName" placeholder="First Name">
+                    <label class="form-label" for="txtLastName" aria-label="Last Name">Last Name</label>
+                    <input class="form-control" id="txtLastName" placeholder="Last Name">
+                    <label class="form-label" for="txtEmail" aria-label="Email">Email</label>
+                    <input class="form-control" id="txtEmail" placeholder="Email">
+                    <label class="form-label" for="txtPassword" aria-label="Password">Password</label>
+                    <input class="form-control" id="txtPassword" type="password" placeholder="Password">
+                    <button class="btn btn-primary col-12 mt-2" type="button" id="btnRegister">Register</button>
+                    <button class="btn btn-link" type="button" id="btnBackToLogin">Back to Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="card col-11 col-md-4 col-lg-3" id="divLogin">
+            <div class="card-body">
+                <h1 class="col-12 text-center">Characters - login</h1>
+                <img src="images/hippo.jpg" alt="HippoExchange Logo" class="col-5" id="imgHippo">
+                <form>
+                    <label class="form-label" for="txtLoginEmail" aria-label="Email">Log In Email</label>
+                    <input class="form-control" id="txtLoginEmail">
+                    <label class="form-label" for="txtLoginPassword" aria-label="Password">Password</label>
+                    <input class="form-control mt-1" id="txtLoginPassword" type="password">
+                    <button class="btn btn-primary col-12" type="button" id="btnLogin">Login</button>
+                    <button class="btn btn-link" type="button" id="btnBackToRegister">Register an account</button>
+                </form>
+            </div>
+        </div>
+        <div class="card col-11 col-md-4 col-lg-3 d-none" id="divDashboard">
+            <div class="card-body">
+                <h1 class="col-12 text-center">Dashboard</h1>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/lib/sweetalert2@11.js"></script>
+    <script src="js/lib/jquery-4.0.0.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
